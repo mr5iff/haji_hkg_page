@@ -1,0 +1,13 @@
+var Rex_O = new Array();
+Rex_O['Super Banner'] = '';
+Rex_O['Super Banner'] += "<"+"script src=\"http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=rsb&c=28&pli=12509977&PluID=0&w=728&h=90&ord=[timestamp]&ucm=true\"><"+"/script>\n"+"<"+"noscript>\n"+"<"+"a href=\"http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=brd&FlightID=12509977&Page=&PluID=0&Pos=887171723\" target=\"_blank\"><"+"img src=\"http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=bsr&FlightID=12509977&Page=&PluID=0&Pos=887171723\" border=0 width=728 height=90><"+"/a>\n"+"<"+"/noscript>"+"<img src='http://forum111.hkgolden.com/lii?p=20&z=4&b=804&ts=1434551627'>";
+Rex_O['Top Textlink Zone 1'] = '';
+Rex_O['Top Textlink Zone 1'] += "<"+"a href=\'http://forum111.hkgolden.com/redirectck?p=52&z=18&b=1173&url=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FadServer.bs%3Fcn%3Dtf%26c%3D20%26mc%3Dclick%26pli%3D13615267%26PluID%3D0%26ord%3D[timestamp]\' target=\'_blank\'> Citibank「貸易借」只需提交簡單文件，現金瞬間到手 <"+"/a>";
+Rex_O['Right Textlink Zone'] = '';
+Rex_O['Right Textlink Zone'] += "<"+"a href=\'http://forum111.hkgolden.com/redirectck?p=52&z=8&b=46&url=http%3A%2F%2Fwww1.fevaworks.com%2Fportal%2Fsite%2Fcourse.asp%3Fcode%3DFREEHKGAPV\' target=\'_blank\'> 高登誠意推介 –免費航拍工作坊 <"+"/a>";
+Rex_O['Top Textlink Zone 2'] = '';
+Rex_O['Top Textlink Zone 2'] += "<"+"a href=\'http://forum111.hkgolden.com/redirectck?p=2&z=16&b=918&url=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FadServer.bs%3Fcn%3Dtf%26c%3D20%26mc%3Dclick%26pli%3D11037329%26PluID%3D0%26ord%3D[timestamp]\' target=\'_blank\'> Citibank 特快現金貸款額高達$200萬，實際年利率低至2.61% <"+"/a>"+"<img src='http://forum111.hkgolden.com/lii?p=2&z=16&b=918&ts=1434551627'>";
+Rex_O['Top Textlink Zone 3'] = '';
+Rex_O['Top Textlink Zone 3'] += "<"+"a href=\'http://forum111.hkgolden.com/redirectck?p=20&z=16&b=822&url=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FadServer.bs%3Fcn%3Dtf%26c%3D20%26mc%3Dclick%26pli%3D12509973%26PluID%3D0%26ord%3D[timestamp]\' target=\'_blank\'>  網上申請星展「貸易清」，清卡數兼享高達$8,600利息折扣 <"+"/a>";
+
+var exclude_bid ="&eb=804&eb=1173&eb=46&eb=918&eb=822";

@@ -1,0 +1,57 @@
+var MessageFunc=function() {
+MessageFunc.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+MessageFunc.prototype={
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return MessageFunc._staticInstance.get_path();},
+VerifyBtnClick_JS:function(succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'VerifyBtnClick_JS',false,{},succeededCallback,failedCallback,userContext); },
+prev_message:function(src,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'prev_message',false,{src:src},succeededCallback,failedCallback,userContext); },
+DeleteTempImage:function(strIndex,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'DeleteTempImage',false,{strIndex:strIndex},succeededCallback,failedCallback,userContext); },
+quote_message:function(s_MessageID,s_ReplyID,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'quote_message',false,{s_MessageID:s_MessageID,s_ReplyID:s_ReplyID},succeededCallback,failedCallback,userContext); },
+VoteTicket:function(MessageID,option_no1,option_no2,option_no3,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'VoteTicket',false,{MessageID:MessageID,option_no1:option_no1,option_no2:option_no2,option_no3:option_no3},succeededCallback,failedCallback,userContext); },
+ShowDetailedTickets:function(MessageID,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'ShowDetailedTickets',false,{MessageID:MessageID},succeededCallback,failedCallback,userContext); },
+MarkingThread:function(MessageID,choice,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'MarkingThread',false,{MessageID:MessageID,choice:choice},succeededCallback,failedCallback,userContext); },
+BlockUser:function(block_id,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'BlockUser',false,{block_id:block_id},succeededCallback,failedCallback,userContext); },
+RemoveBlockUser:function(block_id,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'RemoveBlockUser',false,{block_id:block_id},succeededCallback,failedCallback,userContext); }}
+MessageFunc.registerClass('MessageFunc',Sys.Net.WebServiceProxy);
+MessageFunc._staticInstance = new MessageFunc();
+MessageFunc.set_path = function(value) { MessageFunc._staticInstance.set_path(value); }
+MessageFunc.get_path = function() { return MessageFunc._staticInstance.get_path(); }
+MessageFunc.set_timeout = function(value) { MessageFunc._staticInstance.set_timeout(value); }
+MessageFunc.get_timeout = function() { return MessageFunc._staticInstance.get_timeout(); }
+MessageFunc.set_defaultUserContext = function(value) { MessageFunc._staticInstance.set_defaultUserContext(value); }
+MessageFunc.get_defaultUserContext = function() { return MessageFunc._staticInstance.get_defaultUserContext(); }
+MessageFunc.set_defaultSucceededCallback = function(value) { MessageFunc._staticInstance.set_defaultSucceededCallback(value); }
+MessageFunc.get_defaultSucceededCallback = function() { return MessageFunc._staticInstance.get_defaultSucceededCallback(); }
+MessageFunc.set_defaultFailedCallback = function(value) { MessageFunc._staticInstance.set_defaultFailedCallback(value); }
+MessageFunc.get_defaultFailedCallback = function() { return MessageFunc._staticInstance.get_defaultFailedCallback(); }
+MessageFunc.set_path("/MessageFunc.asmx");
+MessageFunc.VerifyBtnClick_JS= function(onSuccess,onFailed,userContext) {MessageFunc._staticInstance.VerifyBtnClick_JS(onSuccess,onFailed,userContext); }
+MessageFunc.prev_message= function(src,onSuccess,onFailed,userContext) {MessageFunc._staticInstance.prev_message(src,onSuccess,onFailed,userContext); }
+MessageFunc.DeleteTempImage= function(strIndex,onSuccess,onFailed,userContext) {MessageFunc._staticInstance.DeleteTempImage(strIndex,onSuccess,onFailed,userContext); }
+MessageFunc.quote_message= function(s_MessageID,s_ReplyID,onSuccess,onFailed,userContext) {MessageFunc._staticInstance.quote_message(s_MessageID,s_ReplyID,onSuccess,onFailed,userContext); }
+MessageFunc.VoteTicket= function(MessageID,option_no1,option_no2,option_no3,onSuccess,onFailed,userContext) {MessageFunc._staticInstance.VoteTicket(MessageID,option_no1,option_no2,option_no3,onSuccess,onFailed,userContext); }
+MessageFunc.ShowDetailedTickets= function(MessageID,onSuccess,onFailed,userContext) {MessageFunc._staticInstance.ShowDetailedTickets(MessageID,onSuccess,onFailed,userContext); }
+MessageFunc.MarkingThread= function(MessageID,choice,onSuccess,onFailed,userContext) {MessageFunc._staticInstance.MarkingThread(MessageID,choice,onSuccess,onFailed,userContext); }
+MessageFunc.BlockUser= function(block_id,onSuccess,onFailed,userContext) {MessageFunc._staticInstance.BlockUser(block_id,onSuccess,onFailed,userContext); }
+MessageFunc.RemoveBlockUser= function(block_id,onSuccess,onFailed,userContext) {MessageFunc._staticInstance.RemoveBlockUser(block_id,onSuccess,onFailed,userContext); }
+var gtc = Sys.Net.WebServiceProxy._generateTypedConstructor;
+if (typeof(returnBlockClass) === 'undefined') {
+var returnBlockClass=gtc("returnBlockClass");
+returnBlockClass.registerClass('returnBlockClass');
+}

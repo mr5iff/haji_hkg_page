@@ -1,0 +1,28 @@
+var VerifyProcess=function() {
+VerifyProcess.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+VerifyProcess.prototype={
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return VerifyProcess._staticInstance.get_path();},
+VerifyBtnClick_JS:function(email,alt_email,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'VerifyBtnClick_JS',false,{email:email,alt_email:alt_email},succeededCallback,failedCallback,userContext); }}
+VerifyProcess.registerClass('VerifyProcess',Sys.Net.WebServiceProxy);
+VerifyProcess._staticInstance = new VerifyProcess();
+VerifyProcess.set_path = function(value) { VerifyProcess._staticInstance.set_path(value); }
+VerifyProcess.get_path = function() { return VerifyProcess._staticInstance.get_path(); }
+VerifyProcess.set_timeout = function(value) { VerifyProcess._staticInstance.set_timeout(value); }
+VerifyProcess.get_timeout = function() { return VerifyProcess._staticInstance.get_timeout(); }
+VerifyProcess.set_defaultUserContext = function(value) { VerifyProcess._staticInstance.set_defaultUserContext(value); }
+VerifyProcess.get_defaultUserContext = function() { return VerifyProcess._staticInstance.get_defaultUserContext(); }
+VerifyProcess.set_defaultSucceededCallback = function(value) { VerifyProcess._staticInstance.set_defaultSucceededCallback(value); }
+VerifyProcess.get_defaultSucceededCallback = function() { return VerifyProcess._staticInstance.get_defaultSucceededCallback(); }
+VerifyProcess.set_defaultFailedCallback = function(value) { VerifyProcess._staticInstance.set_defaultFailedCallback(value); }
+VerifyProcess.get_defaultFailedCallback = function() { return VerifyProcess._staticInstance.get_defaultFailedCallback(); }
+VerifyProcess.set_path("/VerifyProcess.asmx");
+VerifyProcess.VerifyBtnClick_JS= function(email,alt_email,onSuccess,onFailed,userContext) {VerifyProcess._staticInstance.VerifyBtnClick_JS(email,alt_email,onSuccess,onFailed,userContext); }
